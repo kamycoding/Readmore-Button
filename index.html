@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="bg-video">
+      <source src="./Details/video-space.mp4" type="video/mp4" />
+    </video>
+    <svg class="icon__pack">
+      <symbol
+        id="add-square"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <g opacity="0.4">
+          <path
+            d="M8 12H16"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12 16V8"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <path
+          d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol
+        id="minus-square"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          opacity="0.34"
+          d="M8 12H16"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+    </svg>
+    <div class="loadmore">
+      <div class="loadmore__header">
+        <h1 class="loadmore__title">Our mission and vision</h1>
+        <!-- <img src="./Details/wave-ff.png" class="loadmore__img" alt="wave" /> -->
+      </div>
+      <div class="content">
+        <div class="content__text">
+          At kamycoding, we believe that the most impactful digital experiences
+          are built on a foundation of authenticity, purpose, and human
+          connection. We're not just developers or designers — we are passionate
+          creators, thinkers, and problem solvers who care deeply about how
+          people interact with technology. Our journey began with a simple but
+          powerful vision: To create digital experiences that are not only
+          beautiful, but functional, intuitive, and inclusive. We’ve seen too
+          many interfaces that look good but fail to serve users meaningfully —
+          and we decided to be different. Over the years, we've dedicated
+          ourselves to mastering the craft of front-end development, focusing on
+          every detail — from pixel-perfect layout and accessible typography to
+          smooth animations and meaningful interactions. Our code is clean,
+          structured, and built to scale. Our designs are based on clarity,
+          consistency, and empathy. We don’t follow trends blindly — we study
+          them, understand them, and use them when they align with our
+          principles. We work with purpose. Whether we’re building a simple
+          component or a complete UI system, we make sure every element exists
+          for a reason. We believe in constant learning and continuous
+          improvement. Every bug teaches us something. Every late-night debug
+          session brings us closer to mastery. Every client conversation is an
+          opportunity to listen better, to understand deeper, and to create
+          smarter. We're a small team with a bold spirit — driven by curiosity,
+          guided by design, and powered by code. And while we love to build, we
+          also love to collaborate. So whether you're here to get inspired,
+          explore our work, or start a new project with us — we’re genuinely
+          happy to have you. Thank you for taking the time to learn more about
+          us. We hope this is just the beginning of our story — and maybe, part
+          of yours too.gs us closer to mastery. Every client conversation is an
+          opportunity to listen better, to understand deeper, and to create
+          smarter. We're a small team with a bold spirit — driven by curiosity,
+          guided by design, and powered by code. And while we love to build, we
+          also love to collaborate. So whether you're here to get inspired,
+          explore our work, or start a new project with us — we’re genuinely
+          happy to have you. Thank you for taking the time to learn more about
+          us. We hope this is just the begigs us closer to mastery. Every client
+          conversation is an opportunity to listen better, to understand deeper,
+          and to create smarter. We're a small team with a bold spirit — driven
+          by curiosity, guided by design, and powered by code. And while we love
+          to build, we also love to collaborate. So whether you're here to get
+          inspired, explore our work, or start a new project with us — we’re
+          genuinely happy to have you. Thank you for taking the time to learn
+          more about us. We hope this is just the begigs us closer to mastery.
+          Every client conversation is an opportunity to listen better, to
+          understand deeper, and to create smarter. We're a small team with a
+          bold spirit — driven by curiosity, guided by design, and powered by
+          code. And while we love to build, we also love to collaborate. So
+          whether you're here to get inspired, explore our work, or start a new
+          project with us — we’re genuinely happy to have you. Thank you for
+          taking the time to learn more about us. We hope this is just the begi
+        </div>
+        <div class="content__shadow"></div>
+        <button class="content__btn" type="button">
+          <span class="content__open-text">Read more</span>
+
+          <span class="content__close-text">Minimize</span>
+          <svg class="content__open-icon">
+            <use href="#add-square"></use>
+          </svg>
+          <svg class="content__close-icon">
+            <use href="#minus-square"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+/* === Reset CSS === */
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+}
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  padding: 85px 0;
+  /* Flex System */
+  /* display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; */
+  /* background-color: #dcc0fc; */
+
+  /* background-image: url("../Details/5461992.jpg"); /* مسیر عکس */
+
+
+
+
+}
+input,
+form,
+button {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  font: inherit;
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.icon__pack {
+  display: none;
+}
+
+/* FONTS STYLES */
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* style css */
+
+.loadmore {
+  width: 100%;
+  max-width: 500px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.loadmore__header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.loadmore__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.loadmore__img {
+  width: 100px;
+  margin-left: 210px;
+}
+.content {
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  /* padding: 24px 24px 38px; */
+  padding: 24px 24px 38px 8px;
+  position: relative;
+}
+
+.content__text {
+  height: 288px;
+  overflow: hidden;
+  font-size: 14px;
+  direction: rtl;
+  text-align: left;
+  padding-left: 8px;
+}
+
+.content__shadow {
+  width: 100%;
+  height: 158px;
+  background: linear-gradient(
+    0deg,
+    #f5f5f5 0%,
+    rgba(245, 245, 245, 0.54) 71.07%,
+    rgba(245, 245, 245, 0) 100%
+  );
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 38px;
+}
+
+.content__btn {
+  height: 48px;
+  width: 302px;
+  border-radius: 8px;
+  background-color: #a259ff;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: absolute;
+  bottom: -24px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* hover  */
+
+.content__btn {
+  height: 40px;
+
+  width: 180px;
+  border-radius: 50px;
+  background-color: #a259ff;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  cursor: pointer;
+
+  /* ✅ ثابت‌کردن موقعیت با تعریف اولیه */
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  border: 1px solid transparent;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.content__btn:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.838);
+  background-color: #a259ff;
+}
+
+.content__open-icon,
+.content__close-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.content--open .content__btn {
+  border: 1px solid #a259ff;
+  background-color: #fff;
+  color: #a259ff;
+}
+
+.content__close-icon {
+  display: none;
+}
+
+.content__open-text {
+}
+.content--open .content__text {
+  /* overflow: visible; */
+  /* height: auto; */
+  height: 500px;
+  overflow-y: scroll;
+}
+.content__close-text {
+  display: none;
+}
+
+.content--open .content__shadow {
+  display: none;
+}
+
+.content--open .content__open-text {
+  display: none;
+}
+.content--open .content__close-text {
+  display: block;
+}
+
+.content--open .content__open-icon {
+  display: none;
+}
+
+.content--open .content__close-icon {
+  display: block;
+}
+
+/* CUSTOM SCROLL */
+
+/* width */
+.content__text::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.content__text::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.content__text::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+.content__text::-webkit-scrollbar-thumb:hover {
+  background: #bebebe;
+}
